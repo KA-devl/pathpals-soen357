@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
+import RidePage from "../views/RidePage.vue";
 
 
 const routes = [
@@ -11,7 +12,16 @@ const routes = [
       title: "Home",
       auth: false
     }
-  }
+  },
+  {
+    path: "/ride",
+    name: "RidePage",
+    component: RidePage,
+    meta: {
+      title: "Ride",
+      auth: false
+    }
+  },
 
 
 ];
