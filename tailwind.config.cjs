@@ -1,5 +1,5 @@
 module.exports = {
-  purge: { content: ["./public/**/*.html", "./src/**/*.vue"] },
+  content: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx',],
   // or 'media' or 'class'
   theme: {
     extend: {

@@ -18,11 +18,21 @@ const routes = [
     name: "RidePage",
     component: RidePage,
     meta: {
-      title: "Ride",
+      title: "Ride List",
       auth: false
     }
   },
 
+
+  {
+    path: "/ride",
+    name: "RideDetail",
+    component: RideDetail,
+    meta: {
+      title: "Ride Detail",
+      auth: false
+    }
+  },
 
 ];
 
