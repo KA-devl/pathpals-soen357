@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import RidePage from "../views/RidePage.vue";
 import RideDetail from "../views/RideDetail.vue";
-
+import RideChat from "../views/RideChat.vue";
 const routes = [
   {
     path: "/",
@@ -30,6 +30,16 @@ const routes = [
     component: RideDetail,
     meta: {
       title: "Ride Detail",
+      auth: false
+    }
+  },
+
+  {
+    path: "/chat",
+    name: "RideChat",
+    component: RideChat,
+    meta: {
+      title: "Chat",
       auth: false
     }
   },
