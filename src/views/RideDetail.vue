@@ -18,7 +18,7 @@
             class="z-10 shrink-0 w-3 h-3 bg-white rounded-full border border-emerald-400 border-solid"
           ></div>
           <div
-            class="shrink-0 -mt-1 bg-emerald-400 border-2 border-emerald-400 border-solid h-[70px]"
+            class="shrink-0 -mt-1 -mb-1 bg-emerald-400 border-2 border-emerald-400 border-solid h-[70px]"
           ></div>
           <div
             class="shrink-0 w-3 h-3 bg-white rounded-full border border-emerald-400 border-solid"
@@ -116,7 +116,6 @@
       <div class="mt-9 text-base font-bold leading-6 text-center text-zinc-800">
         Honda Accord 2021
       </div>
-
     </div>
     <div
       class="justify-center self-center p-4 mt-28 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
@@ -124,4 +123,11 @@
       Request for ride
     </div>
   </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 </template>
