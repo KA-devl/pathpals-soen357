@@ -39,7 +39,7 @@
             57,50$
           </div>
         </div>
-        <div class="flex gap-4 mt-5 ">
+        <div @click="navigateTo('RideDetail')" class="flex gap-4 mt-5 ">
           <img
             loading="lazy"
             src="https://img.freepik.com/free-photo/man-car-driving_23-2148889981.jpg"
@@ -177,3 +177,20 @@
   <br />
   <br />
   </template>
+
+<script>
+import { useRouter } from 'vue-router';
+
+export default {
+    setup() {
+        const router = useRouter();
+        const navigateTo = (route) => {
+            router.push({ name: route });
+        };
+        return {
+            navigateTo
+        };
+    }
+}
+
+</script>
