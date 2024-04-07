@@ -118,9 +118,10 @@
       </div>
     </div>
     <div
+    @click="navigateTo('RideChat')"
       class="justify-center self-center p-4 mt-28 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
     >
-      Request for ride
+      Send message
     </div>
   </div>
   <br />
@@ -131,3 +132,21 @@
   <br />
   <br />
 </template>
+
+<script>
+import { useRouter } from 'vue-router';
+
+export default {
+    setup() {
+        const router = useRouter();
+        const navigateTo = (route) => {
+            router.push({ name: route });
+        };
+        return {
+            navigateTo,
+        };
+    }
+}
+
+</script>
+
