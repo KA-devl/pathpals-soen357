@@ -4,11 +4,21 @@ import RidePage from "../views/RidePage.vue";
 import RideDetail from "../views/RideDetail.vue";
 import RideChat from "../views/RideChat.vue";
 import RateDriver from "../views/RateDriver.vue";
-
+import LoginPage from "../views/LoginPage.vue";
+import InitialPage from "../views/InitialPage.vue";
 
 const routes = [
   {
     path: "/",
+    name: "InitialPage",
+    component: InitialPage,
+    meta: {
+      title: "Initial",
+      auth: false,
+    },
+  },
+  {
+    path: "/home",
     name: "HomePage",
     component: HomePage,
     meta: {
@@ -45,8 +55,15 @@ const routes = [
       auth: false,
     },
   },
-
-
+  {
+    path: "/login",
+    name: "LoginPage",
+    component: LoginPage,
+    meta: {
+      title: "Login",
+      auth: false,
+    },
+  },
   {
     path: "/rate",
     name: "RateDriver",
@@ -56,9 +73,6 @@ const routes = [
       auth: false,
     },
   },
-
-
-
 ];
 
 const router = createRouter({
