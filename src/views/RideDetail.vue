@@ -116,7 +116,7 @@
       <div class="mt-9 text-base font-bold leading-6 text-center text-zinc-800">
         Honda Accord 2021
       </div>
-      <div class="self-start mt-2.5 ml-6 text-xs text-neutral-400">White</div>
+
     </div>
     <div
       class="justify-center self-center p-4 mt-28 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"

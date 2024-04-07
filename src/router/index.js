@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import RidePage from "../views/RidePage.vue";
 import RideDetail from "../views/RideDetail.vue";
-import RideChat from "../views/RideChat.vue";
+
 const routes = [
   {
     path: "/",
@@ -10,8 +10,8 @@ const routes = [
     component: HomePage,
     meta: {
       title: "Home",
-      auth: false
-    }
+      auth: false,
+    },
   },
   {
     path: "/ride",
@@ -19,10 +19,9 @@ const routes = [
     component: RidePage,
     meta: {
       title: "Ride List",
-      auth: false
-    }
+      auth: false,
+    },
   },
-
 
   {
     path: "/ride-detail",
@@ -30,18 +29,8 @@ const routes = [
     component: RideDetail,
     meta: {
       title: "Ride Detail",
-      auth: false
-    }
-  },
-
-  {
-    path: "/chat",
-    name: "RideChat",
-    component: RideChat,
-    meta: {
-      title: "Chat",
-      auth: false
-    }
+      auth: false,
+    },
   },
 
 ];
@@ -54,9 +43,7 @@ const router = createRouter({
 //Naming the pages properly
 router.beforeEach((to, from, next) => {
   document.title = `${to.meta.title} | Pathpals`;
-  next()
-})
-
-
+  next();
+});
 
 export default router;
