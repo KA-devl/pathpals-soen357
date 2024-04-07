@@ -2,6 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import RidePage from "../views/RidePage.vue";
 import RideDetail from "../views/RideDetail.vue";
+import RideChat from "../views/RideChat.vue";
+import RateDriver from "../views/RateDriver.vue";
+
 
 const routes = [
   {
@@ -32,6 +35,29 @@ const routes = [
       auth: false,
     },
   },
+
+  {
+    path: "/chat",
+    name: "RideChat",
+    component: RideChat,
+    meta: {
+      title: "Chat",
+      auth: false,
+    },
+  },
+
+
+  {
+    path: "/rate",
+    name: "RateDriver",
+    component: RateDriver,
+    meta: {
+      title: "Rate Driver",
+      auth: false,
+    },
+  },
+
+
 
 ];
 
