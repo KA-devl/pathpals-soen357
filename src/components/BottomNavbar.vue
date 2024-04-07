@@ -1,6 +1,29 @@
 <template>
   <div class="fixed bottom-0 left-0 z-100 w-full h-16 bg-gray-700">
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+    <router-link
+        :to="{ name: 'RidePage' }"
+        type="button"
+        class="inline-flex flex-col items-center justify-center px-5"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#6b7280"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span class="text-xs text-gray-500">Rides</span>
+      </router-link>
       <router-link
         :to="{ name: 'RateDriver' }"
         type="button"
@@ -27,8 +50,9 @@
           >Rate Driver</span
         >
       </router-link>
+
       <router-link
-        :to="{ name: 'RidePage' }"
+        :to="{ name: 'RideDetail' }"
         type="button"
         class="inline-flex flex-col items-center justify-center px-5"
       >
@@ -43,12 +67,10 @@
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        <span class="text-xs text-gray-500">Rides</span>
+        <span class="text-xs text-gray-500">Upcoming</span>
       </router-link>
       <router-link
         :to="{ name: 'HomePage' }"
@@ -75,29 +97,7 @@
       </router-link>
 
       <router-link
-        :to="{ name: 'RideDetail' }"
-        type="button"
-        class="inline-flex flex-col items-center justify-center px-5"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#6b7280"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        <span class="text-xs text-gray-500">Upcoming</span>
-      </router-link>
-
-      <router-link
-        :to="{ name: 'RideDetail' }"
+        :to="{ name: 'RideChat' }"
         type="button"
         class="inline-flex flex-col items-center justify-center px-5"
       >
