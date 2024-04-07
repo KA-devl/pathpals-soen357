@@ -1,34 +1,5 @@
 <template>
   <div class="flex flex-col pb-5 mx-auto w-full bg-white max-w-[480px]">
-    <div class="flex flex-col justify-center py-0.5 w-full bg-white">
-      <div class="flex gap-5 justify-between px-6 py-4 w-full bg-white">
-        <div
-          class="text-sm font-semibold tracking-tight text-center text-black"
-        >
-          9:41
-        </div>
-        <div class="flex gap-1.5 items-start">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/201613c5344995373b840048ccc05c641c56badd115e5ac9df49a1735c39a2da?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-            class="shrink-0 aspect-[1.54] fill-black w-[17px]"
-          /><img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c93ec3e06b05348a407a91332baffece22f33fd486aa3862e3f729bfff38c14?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-            class="shrink-0 aspect-[1.37] fill-black w-[15px]"
-          /><img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/51615d457c50bef367e76fc686ba906347223c552eee1a984f4844907241705a?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-            class="shrink-0 w-6 aspect-[2.17]"
-          />
-        </div>
-      </div>
-    </div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/05728b0e104bfc380ba270c06de737446159f8bceefaa39b88601237fd84d9e0?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-      class="mt-3.5 ml-4 w-11 aspect-square"
-    />
     <div class="flex flex-col px-4 pt-1 pb-7 mt-8 w-full">
       <div class="self-start text-2xl font-medium text-black">Mon 12 July</div>
       <div class="flex gap-5 justify-between py-4 text-base">
@@ -103,8 +74,8 @@
         <div class="flex gap-5">
           <img
             loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8a9e728141beb36706d1cac6d92c02ae8af0ae0d35260c38feb3be75a7083500?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-            class="shrink-0 aspect-square w-[42px]"
+            src="https://img.freepik.com/free-photo/man-car-driving_23-2148889981.jpg"
+            class="shrink-0 aspect-square w-[42px] rounded-full"
           /><img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/70a6fc3b9d8fe41331fb52b1f123a92d0395590d242a0da698556a5c26cdd0e8?apiKey=129d1f5e93294c7ca9a080645a380eca&"

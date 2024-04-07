@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import RidePage from "../views/RidePage.vue";
-
+import RideDetail from "../views/RideDetail.vue";
 
 const routes = [
   {
@@ -25,7 +25,7 @@ const routes = [
 
 
   {
-    path: "/ride",
+    path: "/ride-detail",
     name: "RideDetail",
     component: RideDetail,
     meta: {
