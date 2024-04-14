@@ -1,4 +1,18 @@
 <template>
+  <el-dialog v-model="centerDialogVisible" title="Important note" width="350" center>
+    <span>
+      This is a prototype application. To navigate, please use the buttons without providing any values, or use the navigation menu.
+    </span>
+    <template #footer>
+      <div class="dialog-footer">
+        <el-button @click="centerDialogVisible = false">Cancel</el-button>
+        <el-button type="primary" @click="centerDialogVisible = false">
+          Confirm
+        </el-button>
+      </div>
+    </template>
+  </el-dialog>
+
   <div
     class="flex flex-col justify-end pt-20 pb-5 mx-auto w-full text-base bg-white max-w-[480px]"
   >
@@ -46,15 +60,19 @@
 </template>
 <script>
 import { useRouter } from 'vue-router';
-
+import { onMounted, ref } from 'vue';
 export default {
     setup() {
+      const centerDialogVisible = ref(false)
         const router = useRouter();
         const navigateTo = (route) => {
             router.push({ name: route });
         };
+        onMounted(() => {
+           centerDialogVisible.value = true;
+        });
         return {
-            navigateTo
+            navigateTo, centerDialogVisible
         };
     }
 }

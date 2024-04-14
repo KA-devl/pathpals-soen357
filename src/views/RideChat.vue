@@ -13,7 +13,7 @@
     <section class="flex flex-col px-4 mt-96 w-full text-sm leading-5 text-neutral-400">
       <time class="text-xs font-semibold">Today</time>
       <div class="justify-center px-4 py-2.5 mt-6 text-white rounded-none bg-neutral-400 rounded-2xl">
-        Hy Please come before 5PM - Thanks
+      Hey Please come before 5PM - Thanks
       </div>
       <div class="justify-center self-end px-4 py-2.5 mt-6 text-white bg-emerald-400 rounded-2xl">
         Sure

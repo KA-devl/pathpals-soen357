@@ -1,6 +1,7 @@
 <template>
     <router-view />
     <BottomNavbar />
+    
 </template>
 
 <script>
@@ -10,6 +11,7 @@ export default {
     components: {
         BottomNavbar,
     },
+
 };
 
 
