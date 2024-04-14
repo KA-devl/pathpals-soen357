@@ -3,9 +3,8 @@
     class="flex flex-col justify-end py-20 mx-auto w-full text-base bg-white max-w-[480px]"
   >
     <img
-      loading="lazy"
       src="/public/Pathpals.png"
-      class="self-center mt-44 max-w-full aspect-[4.17] w-[207px]"
+      class="h-72 w-72 mx-auto"
     />
     <div class="flex flex-col justify-center px-4 mt-52 w-full">
       <div
