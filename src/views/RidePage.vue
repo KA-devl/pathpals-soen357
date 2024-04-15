@@ -4,8 +4,10 @@
       <div class="mt-8 text-lg font-semibold leading-6 text-zinc-800 p-5">
         Results for "Montreal to Ottawa"
       </div>
+      <span class="text-sm text-red-500">*Note* : For demonstration purposes, we can only select Johnny</span>
       <div
-        class="flex flex-col justify-between p-5 w-full bg-white rounded shadow-sm"
+      @click="navigateTo('RideDetail')"
+        class="flex flex-col justify-between p-5 w-full bg-white rounded shadow-sm hover:bg-gray-100 rounded-[10px] cursor-pointer"
       >
         <div class="flex gap-2.5 justify-between">
           <div class="flex gap-2.5 items-start">
@@ -40,7 +42,7 @@
             57,50$
           </div>
         </div>
-        <div @click="navigateTo('RideDetail')" class="flex gap-4 mt-5 ">
+        <div  class="flex gap-4 mt-5 ">
           <img
             loading="lazy"
             src="https://img.freepik.com/free-photo/man-car-driving_23-2148889981.jpg"
