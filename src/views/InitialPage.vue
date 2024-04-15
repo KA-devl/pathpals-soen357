@@ -1,7 +1,7 @@
 <template>
-    <el-dialog v-model="centerDialogVisible" title="Important note" width="350" center>
+    <el-dialog v-model="centerDialogVisible" title="***Important note***" width="350" center>
     <span>
-      This is a prototype application. To navigate, please use the buttons without providing any values, or use the navigation menu.
+      This is a prototype application. The bottom navigation bar is only ussed for easy page navigation purposes. Please follow the normal flow of the application without using the bottom navigation bar.
     </span>
     <template #footer>
       <div class="dialog-footer">
