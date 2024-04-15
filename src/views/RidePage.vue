@@ -183,9 +183,18 @@
 
 <script>
 import { useRouter } from 'vue-router';
+import JSConfetti from 'js-confetti'
 
 export default {
     setup() {
+      const jsConfetti = new JSConfetti();
+      jsConfetti.addConfetti()
+      jsConfetti.addConfetti({
+   emojis: ['🚗', '🚗',  '🚗', '✨', '🚗👨'],
+   colors: ['#34D399']
+})
+
+
         const router = useRouter();
         const navigateTo = (route) => {
             router.push({ name: route });

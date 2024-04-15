@@ -66,7 +66,9 @@
       />
     </div>
     <button
-      class="justify-center self-center p-4 mt-48 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
+      v-if="!hideButton"
+      @click="open1"
+      class="justify-center self-center p-4 mt-4 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px] hover:bg-emerald-500"
     >
       Rate Driver
     </button>
@@ -79,3 +81,22 @@
   <br />
   <br />
 </template>
+
+<script setup>
+import { ElNotification } from 'element-plus'
+import {ref} from 'vue';
+
+const hideButton = ref(false);
+
+const open1 = () => {
+  hideButton.value = true
+  ElNotification({
+    title: 'Success',
+    message: 'Successfully rated the driver!',
+    type: 'success',
+  })
+}
+
+
+
+</script>
