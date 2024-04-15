@@ -1,8 +1,9 @@
 <template>
-     <div class="mt-8 text-lg font-semibold leading-6 text-zinc-800 p-5">
+     
+    <div class="flex flex-col p-4 max-w-[375px]  mx-auto">
+      <div class="mt-8 text-lg font-semibold leading-6 text-zinc-800 p-5">
         Results for "Montreal to Ottawa"
       </div>
-    <div class="flex flex-col p-4 max-w-[375px]  mx-auto">
       <div
         class="flex flex-col justify-between p-5 w-full bg-white rounded shadow-sm"
       >
