@@ -76,29 +76,21 @@
             loading="lazy"
             src="https://img.freepik.com/free-photo/man-car-driving_23-2148889981.jpg"
             class="shrink-0 aspect-square w-[42px] rounded-full"
-          /><img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/70a6fc3b9d8fe41331fb52b1f123a92d0395590d242a0da698556a5c26cdd0e8?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-            class="shrink-0 my-auto w-2.5 aspect-[0.63] fill-neutral-400"
           />
         </div>
       </div>
       <div
-        class="flex gap-5 justify-between mt-4 w-full text-sm font-medium text-emerald-400"
+        class="flex gap-5 justify-between mt-4 w-full text-sm font-medium text-emerald-400 "
       >
-        <div class="flex gap-2.5">
+        <div class="flex gap-2.5 ">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/12f3ec1dd515505de64342d51dfad4cecf989a5dc2e885d60704944f8577e2cf?apiKey=129d1f5e93294c7ca9a080645a380eca&"
             class="shrink-0 self-start aspect-[1.49] w-[30px]"
           />
-          <div>Contact Johnny</div>
+          <div @click="navigateTo('RideChat')" class="cursor-pointer hover:text-emerald-500">Contact Johnny</div>
         </div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/09054b560e976f0f08090bd112d754d0ff8441681246bd5f6cb5d02ef2907526?apiKey=129d1f5e93294c7ca9a080645a380eca&"
-          class="shrink-0 self-start w-2.5 aspect-[0.59] fill-neutral-400"
-        />
+
       </div>
       <div
         class="shrink-0 mt-3.5 h-px border border-solid bg-zinc-100 border-zinc-100"
@@ -117,12 +109,32 @@
         Honda Accord 2021
       </div>
     </div>
-    <div
+    <el-dialog v-model="centerDialogVisible" title="Are you sure you would like to rate your driver?" width="350" center>
+    <span>
+      You must finish your ride in order to rate the driver. Are you sure you want to rate the driver?
+    </span>
+    <template #footer>
+      <div class="dialog-footer">
+        <el-button @click="centerDialogVisible = false">Cancel</el-button>
+        <el-button type="primary" @click="centerDialogVisible = false; navigateTo('RateDriver'); ">
+          Rate the driver
+        </el-button>
+      </div>
+    </template>
+  </el-dialog>
+
+    <button
+    @click="centerDialogVisible = true"
+      class="hover:bg-emerald-500 justify-center self-center p-4  text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
+    >
+      Rate Driver
+  </button>
+    <button
     @click="navigateTo('RideChat')"
-      class="justify-center self-center p-4 mt-28 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
+      class="hover:bg-emerald-500 justify-center self-center p-4 mt-3 text-base font-medium leading-6 text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
     >
       Send message
-    </div>
+  </button>
   </div>
   <br />
   <br />
@@ -135,15 +147,18 @@
 
 <script>
 import { useRouter } from 'vue-router';
+import { ref } from 'vue';
 
 export default {
     setup() {
+      const centerDialogVisible = ref(false)
         const router = useRouter();
         const navigateTo = (route) => {
             router.push({ name: route });
         };
         return {
             navigateTo,
+            centerDialogVisible
         };
     }
 }

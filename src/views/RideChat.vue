@@ -8,7 +8,6 @@
           <p class="mt-1.5 text-xs leading-5 text-neutral-400">Today, 1 Passenger</p>
         </div>
       </div>
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/040c1b9e62366b5665b4fc06d1a10ca4f6fec216ce6f0825b88a3f303c78001a?apiKey=129d1f5e93294c7ca9a080645a380eca&" alt="Menu icon" class="shrink-0 my-auto w-6 aspect-square" />
     </section>
     <section class="flex flex-col px-4 mt-96 w-full text-sm leading-5 text-neutral-400">
       <time class="text-xs font-semibold">Today</time>

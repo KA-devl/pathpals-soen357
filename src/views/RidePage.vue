@@ -4,7 +4,7 @@
       <div class="mt-8 text-lg font-semibold leading-6 text-zinc-800 p-5">
         Results for "Montreal to Ottawa"
       </div>
-      <span class="text-sm text-red-500">*Note* : For demonstration purposes, we can only select Johnny</span>
+      <span class="text-sm text-red-500"><span class="font-bold">*Note*</span> : For demonstration purposes, we can only select Johnny</span>
       <div
       @click="navigateTo('RideDetail')"
         class="flex flex-col justify-between p-5 w-full bg-white rounded shadow-sm hover:bg-gray-100 rounded-[10px] cursor-pointer"
