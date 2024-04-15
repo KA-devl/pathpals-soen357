@@ -30,21 +30,23 @@
       </div>
       <div class="flex gap-5 justify-between mt-7 max-w-full w-[123px]">
         <button
-          class="shrink-0 rounded-full border border-black border-solid aspect-square stroke-[1px] w-[21px]"
+        @click="counter--"
+          class="p-1 px-3 rounded-full bg-emerald-400 text-white border  border-solid aspect-square  font-bold text-2xl"
         >
           -
         </button>
 
-        <div class="my-auto text-lg font-medium text-black">1</div>
+        <div class="my-auto text-lg font-medium text-black">{{ counter }}</div>
         <button
-          class="shrink-0 rounded-full border border-black border-solid aspect-square stroke-[1px] w-[21px]"
+        @click="counter++"
+          class="p-1 px-3 rounded-full bg-emerald-400 text-white border  border-solid aspect-square  font-bold text-2xl"
         >
           +
         </button>
       </div>
     </div>
     <button
-      class="justify-center self-center p-4 mt-24 text-base font-medium text-center text-white whitespace-nowrap bg-emerald-400 shadow-sm rounded-[50px]"
+      class="justify-center self-center p-4 mt-24 text-base font-medium text-center text-white whitespace-nowrap bg-emerald-400 shadow-sm rounded-[50px] hover:bg-emerald-500"
     >
       Search for ride
     </button>
@@ -64,6 +66,22 @@
   <br />
 </template>
 
+<script>
+import {ref} from 'vue';
+
+export default {
+  setup() {
+    const counter = ref(1);
+    return {
+      counter
+    }
+  }
+}
+
+
+
+
+</script>
 
 
 
