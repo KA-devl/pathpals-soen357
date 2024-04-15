@@ -1,17 +1,4 @@
 <template>
-  <el-dialog v-model="centerDialogVisible" title="Important note" width="350" center>
-    <span>
-      This is a prototype application. To navigate, please use the buttons without providing any values, or use the navigation menu.
-    </span>
-    <template #footer>
-      <div class="dialog-footer">
-        <el-button @click="centerDialogVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="centerDialogVisible = false">
-          Confirm
-        </el-button>
-      </div>
-    </template>
-  </el-dialog>
 
   <div
     class="flex flex-col justify-end pt-20 pb-5 mx-auto w-full text-base bg-white max-w-[480px]"
@@ -23,32 +10,24 @@
         Your email and password
       </div>
       <input
-        class="justify-center items-start p-4 mt-5 whitespace-nowrap rounded-sm border border-solid bg-slate-50 border-zinc-100"
+        class="text-gray-700 justify-center items-start p-4 mt-5 whitespace-nowrap rounded-sm border border-solid bg-slate-50 border-emerald-100"
         placeholder="Email"
       >
         
-    
-      <div
-        class="flex gap-5 justify-between p-4 mt-5 whitespace-nowrap rounded-sm border border-solid bg-slate-50 border-zinc-100"
+      <input
+        class="text-gray-700 justify-center items-start p-4 mt-5 whitespace-nowrap rounded-sm border border-solid bg-slate-50 border-emerald-100"
+        placeholder="Password"
       >
-        <div class="my-auto">Password</div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a201f2ae420a0ec54472b1b93c20c6da1444bc16fd43e7287c528bb24c5658c?"
-          class="shrink-0 w-6 aspect-square"
-        />
-      </div>
       <div class="mt-5 text-center text-sky-600">
-        <span class="text-sky-600">Forgot</span>
-        <span class="">Password?</span>
+        <span class="text-gray-400">Forgot Password? </span>
       </div>
     </form>
-    <div
-      class="justify-center self-center p-4 mt-3 font-medium text-center text-white bg-emerald-400 shadow-sm rounded-[50px]"
+    <button
+      class="justify-center self-center p-4 px-16 mt-3 font-medium text-center text-white bg-emerald-400 shadow-sm rounded-[50px] hover:bg-emerald-500"
       @click="navigateTo('HomePage')"
     >
       Sign in
-    </div>
+  </button>
   </div>
   <br />
   <br />
