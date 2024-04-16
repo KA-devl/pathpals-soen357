@@ -9,6 +9,7 @@
       <div class="text-2xl font-medium text-zinc-800">
         Your email and password
       </div>
+      <p class="text-sm text-yellow-500">**Note : For demonstration purposes, there is no need to provide a real email/password.</p>
       <input
         class="text-gray-700 justify-center items-start p-4 mt-5 whitespace-nowrap rounded-sm border border-solid bg-slate-50 border-emerald-100"
         placeholder="Email"

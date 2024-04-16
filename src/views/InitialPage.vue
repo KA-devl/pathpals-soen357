@@ -1,7 +1,10 @@
 <template>
     <el-dialog v-model="centerDialogVisible" title="***Important note***" width="350" center>
-    <span>
-      This is a prototype application. The bottom navigation bar is only ussed for easy page navigation purposes. Please follow the normal flow of the application without using the bottom navigation bar.
+    <span class="flex flex-col">
+      <span class="font-bold">This is a prototype application. The bottom navigation bar is only used for easy page navigation purposes. For a better UI experience, please open the application in a mobile screen view.</span>
+      <span class="underline">Steps to use the application:</span>
+      <span>1 - Use the application as an actual user (By following the right flow)</span>
+      <span>2 - Visit (jump) to other pages by using the bottom navigation bar to see in details the UI design</span>
     </span>
     <template #footer>
       <div class="dialog-footer">
